@@ -2,8 +2,8 @@ package parallel_test
 
 import (
 	"errors"
+	"github.com/reyoung/parallel"
 	"github.com/stretchr/testify/assert"
-	"parallel"
 	"strings"
 	"testing"
 )
