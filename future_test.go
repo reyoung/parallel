@@ -13,7 +13,9 @@ func TestNewFuture(t *testing.T) {
 		complete = true
 		return nil, nil
 	})
+	assert.Equal(t, false, fut.IsComplete())
 	_, err := fut.Get()
 	assert.Nil(t, err)
 	assert.Equal(t, true, complete)
+	assert.Equal(t, true, fut.IsComplete())
 }
